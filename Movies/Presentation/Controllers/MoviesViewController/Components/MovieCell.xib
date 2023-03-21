@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCell" customModule="Movies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="238" height="284"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="238" height="284"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wqM-WL-ryP">
+                        <rect key="frame" x="0.0" y="0.0" width="238" height="284"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEi-r5-hiA" customClass="CustomGradientBackgroundView" customModule="Movies" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="268" width="238" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-aW-XMH">
+                        <rect key="frame" x="8" y="276" width="148" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZc-nK-SLo">
+                        <rect key="frame" x="160" y="276" width="70" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="7aw-vZ-vUU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="4rg-aW-XMH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="7xu-ae-Pfe"/>
+                <constraint firstItem="wqM-WL-ryP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="E4i-gk-Gfz"/>
+                <constraint firstItem="lZc-nK-SLo" firstAttribute="leading" secondItem="4rg-aW-XMH" secondAttribute="trailing" constant="4" id="EXD-YB-XpV"/>
+                <constraint firstItem="wqM-WL-ryP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="P58-a8-QIJ"/>
+                <constraint firstAttribute="bottom" secondItem="lZc-nK-SLo" secondAttribute="bottom" constant="8" id="R8j-oW-8vY"/>
+                <constraint firstItem="kEi-r5-hiA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SHe-eq-5f1"/>
+                <constraint firstItem="kEi-r5-hiA" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Z0q-60-ntQ"/>
+                <constraint firstAttribute="bottom" secondItem="4rg-aW-XMH" secondAttribute="bottom" constant="8" id="ZUY-ay-gEx"/>
+                <constraint firstItem="kEi-r5-hiA" firstAttribute="top" secondItem="4rg-aW-XMH" secondAttribute="top" constant="-8" id="bCB-yg-gbz"/>
+                <constraint firstAttribute="trailing" secondItem="lZc-nK-SLo" secondAttribute="trailing" constant="8" id="ek8-gF-CNE"/>
+                <constraint firstAttribute="trailing" secondItem="wqM-WL-ryP" secondAttribute="trailing" id="kKf-QW-ugt"/>
+                <constraint firstAttribute="bottom" secondItem="wqM-WL-ryP" secondAttribute="bottom" id="vn0-vi-y7R"/>
+                <constraint firstAttribute="bottom" secondItem="kEi-r5-hiA" secondAttribute="bottom" id="zh5-pM-CfZ"/>
+            </constraints>
+            <size key="customSize" width="238" height="284"/>
+            <connections>
+                <outlet property="nameLabel" destination="4rg-aW-XMH" id="F7A-Y1-Zbz"/>
+                <outlet property="posterImageView" destination="wqM-WL-ryP" id="zEV-xq-m3R"/>
+                <outlet property="yearLabel" destination="lZc-nK-SLo" id="BZ3-RI-ruC"/>
+            </connections>
+            <point key="canvasLocation" x="282.44274809160305" y="102.8169014084507"/>
+        </collectionViewCell>
+    </objects>
+</document>
